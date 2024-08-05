@@ -1,14 +1,12 @@
-﻿using JornadaMilhasV1.Modelos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using JornadaMilhas.Dados;
+using JornadaMilhasV1.Modelos;
 
 namespace JornadaMilhasV1.Gerencidor;
 public class GerenciadorDeOfertas
 {
     private List<OfertaViagem> ofertaViagem = new List<OfertaViagem>();
+    OfertaViagemDal ofertaViagemDal = new OfertaViagemDal(new JornadasMilhasContext());
+
 
     public GerenciadorDeOfertas(List<OfertaViagem> ofertaViagem)
     {
@@ -65,6 +63,11 @@ public class GerenciadorDeOfertas
 
     }
 
+    public OfertaViagem? RecuperaMaiorDesconto(Func<OfertaViagem, bool> filtro) => ofertaViagem
+                                                                                    .Where(filtro)
+                                                                                    .Where(o => o.Ativa)
+                                                                                    .OrderBy(o => o.Preco)
+                                                                                    .FirstOrDefault();
 
     public void CarregarOfertas()
     {

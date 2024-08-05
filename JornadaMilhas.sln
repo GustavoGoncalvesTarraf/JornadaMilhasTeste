@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JornadaMilhas", "src\JornadaMilhasV1\JornadaMilhas.csproj", "{12ECD4A5-4B9C-4351-AC72-FA1675783986}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JornadaMilhas.Test", "testes\JornadaMilhas.Test\JornadaMilhas.Test.csproj", "{E3075066-AD6B-4CC3-990A-383919D69EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JornadaMilhas.Test.Integracao", "JornadaMilhas.Test.Integracao\JornadaMilhas.Test.Integracao.csproj", "{AA123769-20FB-44A1-9808-4C5E1F9F2936}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{12ECD4A5-4B9C-4351-AC72-FA1675783986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12ECD4A5-4B9C-4351-AC72-FA1675783986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12ECD4A5-4B9C-4351-AC72-FA1675783986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3075066-AD6B-4CC3-990A-383919D69EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3075066-AD6B-4CC3-990A-383919D69EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3075066-AD6B-4CC3-990A-383919D69EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3075066-AD6B-4CC3-990A-383919D69EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA123769-20FB-44A1-9808-4C5E1F9F2936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA123769-20FB-44A1-9808-4C5E1F9F2936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA123769-20FB-44A1-9808-4C5E1F9F2936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA123769-20FB-44A1-9808-4C5E1F9F2936}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
